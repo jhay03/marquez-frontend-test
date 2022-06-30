@@ -129,7 +129,10 @@ const TopMoviesArea = () => {
   return (
     <div className="container-fluid">
       <div className="row mt-3">
-        <h2>Task 2 : Top Movies Area ( using manual function )</h2>
+        <h2>
+          Task 2 : Top Movies Area ( using manual function inside the table )
+        </h2>
+
         <div className="col-md-5">
           <img src={movie} alt={"Movies"} />
         </div>
@@ -161,9 +164,7 @@ const TopMoviesArea = () => {
       </div>
 
       <div className="row mt-3">
-        <h2>
-          Task 2 : Top Movies Area ( using manual function inside the table )
-        </h2>
+        <h2>Task 2 : Top Movies Area ( using manual function )</h2>
         <div className="col-md-5">
           <img src={movie} alt={"Movies"} />
         </div>
