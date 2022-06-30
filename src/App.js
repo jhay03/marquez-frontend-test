@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { ToastContainer } from "react-toastify";
+import CalculatorArea from "./component/CalculatorArea";
+import Footer from "./component/Footer";
+import HeroChanges from "./component/HeroChanges";
+import Navbar from "./component/Navbar";
+import TopMoviesArea from "./component/TopMoviesArea";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+
+      <div className="col-md-12">
+        <HeroChanges />
+        {/* <div className="straight-bar"></div> */}
+        <hr />
+
+        <TopMoviesArea />
+
+        {/* <div className="straight-bar"></div> */}
+        <hr />
+
+        <CalculatorArea />
+      </div>
+      <Footer />
+      <ToastContainer position="bottom-right" />
     </div>
   );
 }
